@@ -1,14 +1,22 @@
 {
-	"name": "twitter-stream",
-	"version": "0.0.1",
-	"description": "Simple twitter stream client.",
-	"keywords": ["twitter","streaming"], 
-	"author": "Reinhard Handler",
-	"dependencies": {
-		"oauth": "0.9.8"
-	}, 
-	"repository" : {
-		"type": "git",
-		"url": "git@github.com:rehand/twitter-stream.git"
-	}
+  "name": "twitter-stream",
+  "version": "1.0.0",
+  "description": "Simple Twitter stream client",
+  "dependencies": {
+    "oauth": "^0.9.8"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rehand/twitter-stream.git"
+  },
+  "keywords": [
+    "twitter",
+    "streaming"
+  ],
+  "author": "Reinhard Handler <reinhard.handler@gmail.com> (http://github.com/rehand)",
+  "bugs": {
+    "url": "https://github.com/rehand/twitter-stream/issues"
+  },
+  "homepage": "https://github.com/rehand/twitter-stream"
 }
