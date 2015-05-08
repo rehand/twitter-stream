@@ -1,1 +1,1 @@
-module.exports = require('./lib/user-stream');
+module.exports = require('./lib/twitter-stream');

@@ -1,28 +1,27 @@
-user-stream
+twitter-stream
 =============
-[![NPM module](https://badge.fury.io/js/user-stream.png)](https://badge.fury.io/js/user-stream)
-
-Simple Node.js Twitter (API 1.1) user stream client (https://dev.twitter.com/docs/streaming-apis/streams/user)
-
-[![NPM](https://nodei.co/npm/user-stream.png?stars&downloads)](https://nodei.co/npm/user-stream/)
+Simple Node.js Twitter (API 1.1) stream client (https://dev.twitter.com/streaming/overview)
 
 Install
 -------
-```npm install user-stream```
+```npm install twitter-stream```
 
 Usage
 -------
 ```javascript
-var Stream = require('user-stream');
+var Stream = require('twitter-stream');
 var stream = new Stream({
     consumer_key: '',
     consumer_secret: '',
     access_token_key: '',
-    access_token_secret: ''
+    access_token_secret: '',
+    stream_url: 'https://stream.twitter.com/1.1/statuses/filter.json'
 });
 
 //create stream
-stream.stream();
+stream.stream({
+    track: '#github'
+});
 
 //listen stream data
 stream.on('data', function(json) {
