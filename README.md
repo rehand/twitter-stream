@@ -9,8 +9,8 @@ Install
 Usage
 -------
 ```javascript
-var Stream = require('twitter-stream');
-var stream = new Stream({
+var TwitterStream = require('twitter-stream');
+var stream = new TwitterStream({
     consumer_key: '',
     consumer_secret: '',
     access_token_key: '',
